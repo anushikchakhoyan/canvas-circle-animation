@@ -18,17 +18,18 @@
 
         draw () {
             ctx.beginPath();
-            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+            ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
             ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
             ctx.fill();
+            ctx.closePath();
         };
 
         update () {
-            if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+            if (this.x + this.radius > window.innerWidth || this.x - this.radius < 0) {
                 this.dx = -this.dx;
             }
 
-            if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+            if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) {
                 this.dy = -this.dy;
             }
 
@@ -40,9 +41,9 @@
 
     // Generates Circles
     for (let i = 0; i < 10; i++) {
-        let radius = 70;
-        let x = Math.random() * innerWidth;
-        let y = Math.random() * innerHeight;
+        let radius = 50;
+        let x = Math.round( Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
         let dx = Math.random() - 2;
         let dy = Math.random() - 2;
 
@@ -50,10 +51,11 @@
     }
 
     function animate() {
-        requestAnimationFrame(animate);
-        ctx.clearRect(0, 0, innerWidth, innerHeight);
+        window.requestAnimationFrame(animate);
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
         for (let j = 0; j < circleArray.length; j++) {
-            circleArray[j].update();
+           circleArray[j].update();
         }
     }
 
