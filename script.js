@@ -1,10 +1,10 @@
 (function () {
-    let canvas = document.getElementById("circle-canvas");
-    let ctx = canvas.getContext("2d");
+    let canvas = document.getElementById('circle-canvas');
+    let ctx = canvas.getContext('2d');
     let circleArray = [];
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
 
     // Circle Object creator
     class Circle {
@@ -16,20 +16,20 @@
             this.radius = radius;
         }
 
-        draw () {
+        draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
             ctx.fill();
             ctx.closePath();
         };
 
-        update () {
-            if (this.x + this.radius > window.innerWidth || this.x - this.radius < 0) {
+        update() {
+            if (this.x + this.radius > width || this.x - this.radius < 0) {
                 this.dx = -this.dx;
             }
 
-            if (this.y + this.radius > window.innerHeight || this.y - this.radius < 0) {
+            if (this.y + this.radius > height || this.y - this.radius < 0) {
                 this.dy = -this.dy;
             }
 
@@ -39,11 +39,15 @@
         };
     }
 
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+    }
+
     // Generates Circles
-    for (let i = 0; i < 10; i++) {
-        let radius = 50;
-        let x = Math.round( Math.random() * window.innerWidth);
-        let y = Math.round(Math.random() * window.innerHeight);
+    for (let i = 0; i < 20; i++) {
+        let radius = getRandomInt(40, 80);
+        let x = Math.floor(Math.random() * width);
+        let y = Math.floor(Math.random() * height);
         let dx = Math.random() - 2;
         let dy = Math.random() - 2;
 
@@ -52,10 +56,10 @@
 
     function animate() {
         window.requestAnimationFrame(animate);
-        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+        ctx.clearRect(0, 0, width, height);
 
         for (let j = 0; j < circleArray.length; j++) {
-           circleArray[j].update();
+            circleArray[j].update();
         }
     }
 
