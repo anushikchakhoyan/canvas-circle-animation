@@ -1,5 +1,5 @@
 (function () {
-    let canvas = document.getElementById('circle-canvas');
+    let canvas = document.getElementById('canvas-overlay');
     let ctx = canvas.getContext('2d');
     let circleArray = [];
 

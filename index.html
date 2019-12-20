@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="src/styles/styles.scss" type="text/css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link href="src/theme/_base.scss" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<div class="wrapper">
-    <canvas id="circle-canvas"></canvas>
-
-    <div class="overlay flex flex-col items-center">
-        <h1 class="title">OnePage Website</h1>
-        <div>
-            <ul class="social-links flex justify-between items-center">
-                <li>
-                    <a class="social-links-item" href="">kj</a>
-                </li>
-                <li>
-                    <a class="social-links-item" href="">kj</a>
-                </li>
-                <li>
-                    <a class="social-links-item" href="">kj</a>
-                </li>
-                <li>
-                    <a class="social-links-item" href="">kj</a>
-                </li>
+<main>
+    <header id="home" class="main-heading h-screen relative">
+        <canvas id="canvas-overlay" class="h-full"></canvas>
+        <nav class="fixed z-20 top-0 w-full px-10 py-8 flex justify-end items-center">
+            <ul class="flex">
+                <li><a class="px-3 text-white text-base" href="#home">Home</a></li>
+                <li><a class="px-3 text-white text-base" href="#about">About</a></li>
+                <li><a class="px-3 text-white text-base" href="#portfolio">Portfolio</a></li>
+                <li><a class="px-3 text-white text-base" href="#contacts">Contacts</a></li>
             </ul>
+        </nav>
+        <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
+            <h1 class="text-white text-6xl mb-0">OnePage Website</h1>
+            <p class="text-white text-base">Web Designer & Developer</p>
+            <ul class="pt-8 px-0 list-none flex justify-between items-end">
+                    <li class="px-3">
+                        <a class="text-white text-lg" href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-white text-lg" href="https://www.linkedin.com/in/anush-chakhoyan/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-white text-lg" href="https://www.instagram.com/anushchakhoyan/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="px-3">
+                        <a class="text-white text-lg" href="https://www.pinterest.com/anush_chakhoyan/" target="_blank" rel="noreferrer"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
         </div>
-    </div>
-</div>
+    </header>
+    <section id="about" class="relative h-screen bg-red-400">
+        <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
+            <h1 class="text-white text-6xl mb-0">About</h1>
+        </div>
+    </section>
+    <section id="portfolio" class="relative h-screen bg-blue-400">
+        <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
+            <h1 class="text-white text-6xl mb-0">Portfolio</h1>
+        </div>
+    </section>
+    <section id="contacts" class="relative h-screen bg-red-300">
+        <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
+            <h1 class="text-white text-6xl mb-0">Contacts</h1>
+        </div>
+    </section>
+</main>
 
 <script src="src/js/index.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+
 </body>
 </html>
