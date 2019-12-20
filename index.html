@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link href="src/theme/_base.scss" type="text/css" rel="stylesheet"/>
 </head>
-<body>
+<body class="m-0 overflow-hidden">
 <main>
     <header id="home" class="main-heading h-screen relative">
-        <canvas id="canvas-overlay" class="h-full"></canvas>
-        <nav class="fixed z-20 top-0 w-full px-10 py-8 flex justify-end items-center">
-            <ul class="flex">
-                <li><a class="px-3 text-white text-base" href="#home">Home</a></li>
-                <li><a class="px-3 text-white text-base" href="#about">About</a></li>
-                <li><a class="px-3 text-white text-base" href="#portfolio">Portfolio</a></li>
-                <li><a class="px-3 text-white text-base" href="#contacts">Contacts</a></li>
-            </ul>
+        <canvas id="canvas-overlay" class="h-full w-full m-0 hidden md:block"></canvas>
+        <nav class="fixed z-20 top-0 w-full px-10 py-3 md:py-8 bg-white md:bg-transparent">
+            <div class="flex justify-end md:hidden">
+                <a id="toggle" href="javascript:void(0);" class="text-black md:text-white">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div id="data-info" class="hidden justify-start items-start md:justify-end md:flex">
+                <ul class="flex flex-col md:flex-row">
+                    <li class="p-3"><a class="text-black md:text-white text-base" href="#home">Home</a></li>
+                    <li class="p-3"><a class="text-black md:text-white text-base" href="#about">About</a></li>
+                    <li class="p-3"><a class="text-black md:text-white text-base" href="#portfolio">Portfolio</a></li>
+                    <li class="p-3"><a class="text-black md:text-white text-base" href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
-            <h1 class="text-white text-6xl mb-0">OnePage Website</h1>
+            <h1 class="text-white text-3xl md:text-6xl mb-0">OnePage Website</h1>
             <p class="text-white text-base">Web Designer & Developer</p>
             <ul class="pt-8 px-0 list-none flex justify-between items-end">
-                    <li class="px-3">
-                        <a class="text-white text-lg" href=""><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="px-3">
-                        <a class="text-white text-lg" href="https://www.linkedin.com/in/anush-chakhoyan/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li class="px-3">
-                        <a class="text-white text-lg" href="https://www.instagram.com/anushchakhoyan/" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="px-3">
-                        <a class="text-white text-lg" href="https://www.pinterest.com/anush_chakhoyan/" target="_blank" rel="noreferrer"><i class="fab fa-pinterest-p"></i></a>
-                    </li>
-                </ul>
+                <li class="px-3">
+                    <a class="text-white text-lg" href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="px-3">
+                    <a class="text-white text-lg" href="https://www.linkedin.com/in/anush-chakhoyan/" target="_blank"
+                       rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="px-3">
+                    <a class="text-white text-lg" href="https://www.instagram.com/anushchakhoyan/" target="_blank"
+                       rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="px-3">
+                    <a class="text-white text-lg" href="https://www.pinterest.com/anush_chakhoyan/" target="_blank"
+                       rel="noreferrer"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+            </ul>
         </div>
     </header>
     <section id="about" class="relative h-screen bg-red-400">
@@ -56,7 +68,8 @@
     </section>
 </main>
 
-<script src="src/js/index.js"></script>
+<script src="src/js/canvas.js"></script>
+<script src="src/js/custom.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
 
 </body>
