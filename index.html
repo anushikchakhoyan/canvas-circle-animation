@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link href="src/theme/_base.scss" type="text/css" rel="stylesheet"/>
 </head>
-<body class="m-0 overflow-hidden">
+<body class="m-0">
 <main>
     <header id="home" class="main-heading h-screen relative">
         <canvas id="canvas-overlay" class="h-full w-full m-0 hidden md:block"></canvas>
@@ -22,10 +22,10 @@
             </div>
             <div id="data-info" class="hidden justify-start items-start md:justify-end md:flex">
                 <ul class="flex flex-col md:flex-row">
-                    <li class="p-3"><a class="text-black md:text-white text-base" href="#home">Home</a></li>
-                    <li class="p-3"><a class="text-black md:text-white text-base" href="#about">About</a></li>
-                    <li class="p-3"><a class="text-black md:text-white text-base" href="#portfolio">Portfolio</a></li>
-                    <li class="p-3"><a class="text-black md:text-white text-base" href="#contacts">Contacts</a></li>
+                    <li class="p-3"><a class="text-black hover:text-white text-base" href="#home">Home</a></li>
+                    <li class="p-3"><a class="text-black hover:text-white text-base" href="#about">About</a></li>
+                    <li class="p-3"><a class="text-black hover:text-white text-base" href="#portfolio">Portfolio</a></li>
+                    <li class="p-3"><a class="text-black hover:text-white text-base" href="#contacts">Contacts</a></li>
                 </ul>
             </div>
         </nav>
@@ -51,11 +51,16 @@
             </ul>
         </div>
     </header>
-    <section id="about" class="relative h-screen bg-red-400">
+    <section id="about" class="relative h-screen bg-gray-100">
         <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
-            <h1 class="text-white text-6xl mb-0">About</h1>
+            <h1 class="text-black text-6xl mb-0">About</h1>
+
+            <div class="about-section-wrapper">
+
+            </div>
         </div>
     </section>
+    <article class="test relative"></article>
     <section id="portfolio" class="relative h-screen bg-blue-400">
         <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
             <h1 class="text-white text-6xl mb-0">Portfolio</h1>
