@@ -8,7 +8,7 @@
 
         if (list.style.display === 'flex') {
             list.style.display = 'none';
-        } else  {
+        } else {
             list.style.display = 'flex';
         }
     });
