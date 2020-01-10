@@ -3,9 +3,11 @@ module.exports = {
     separator: ':',
     theme: {
         extend: {
-            backgroundSize: {
-                full: '100% 100%'
-            }
+        },
+        colors: {
+            indigo: {
+                500: '#79354e'
+            },
         },
         screens: {
             xs: '480px',

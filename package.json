@@ -11,7 +11,7 @@
     "tailwindcss": "^1.1.4"
   },
   "scripts": {
-    "build": "parcel index.html"
+    "serve": "parcel index.html"
   },
   "devDependencies": {
     "sass": "^1.23.7"
