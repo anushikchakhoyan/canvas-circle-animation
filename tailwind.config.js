@@ -3,12 +3,13 @@ module.exports = {
     separator: ':',
     theme: {
         extend: {
-        },
-        colors: {
-            indigo: {
-                500: '#79354e'
+            colors: {
+                indigo: {
+                    500: '#79354e'
+                }
             },
         },
+
         screens: {
             xs: '480px',
             sm: '640px',
