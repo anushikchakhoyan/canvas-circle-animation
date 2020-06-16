@@ -67,3 +67,6 @@
 
     animate();
 })();
+
+// TODO: make responsive
+// https://jsfiddle.net/lannymcnie/4yy08pax/
