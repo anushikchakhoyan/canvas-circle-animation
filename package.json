@@ -1,0 +1,18 @@
+{
+  "name": "canvas-circle-animation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:anush_chakhoyan/canvas-circle-animation.git",
+  "author": "Anush <anush.chakhoyan@makeinarmenia.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "postcss-cli": "^6.1.3"
+  },
+  "scripts": {
+    "serve": "parcel index.html"
+  },
+  "devDependencies": {
+    "sass": "^1.23.7"
+  }
+}

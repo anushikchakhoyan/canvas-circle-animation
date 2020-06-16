@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        body {
-            overflow: hidden;
-            margin: 0;
-        }
-
-        .wrapper {
-            background-size: cover;
-            background-image: url("http://theembazaar.com/demo/themesping/everolio/demo/assets/images/banner.jpg");
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon.ico">
+    <link href="src/theme/_base.scss" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<div class="wrapper">
-    <canvas id="circle-canvas"></canvas>
-</div>
+<main>
+    <header id="home" class="main-heading">
+        <canvas id="canvas-overlay" class="h-full w-full"></canvas>
+    </header>
+</main>
 
-<script src="script.js"></script>
+<script src="src/js/canvas.js"></script>
 </body>
 </html>
