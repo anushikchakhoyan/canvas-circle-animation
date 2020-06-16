@@ -1,17 +1,13 @@
-@import 'tailwind';
-
-$black: #000;
-
-h1, h2, h3, h4, h5, p, span, a {
-  font-family: 'Josefin Sans', sans-serif;
+body {
+  padding: 0;
+  margin: 0;
 }
 
 .main-heading {
-  background-size: cover;
-  position: relative;
+  background-image: url('../assets/cover.jpg');
   background-attachment: fixed;
-  background-image: url('https://www.accoladesit.com/images/mainback10comp.jpg');
-  //url("http://bmjcreative.com/wp-content/uploads/2017/03/website-development-background.jpg")
+  background-size: cover;
+  height: 100vh;
 
   &::before {
     top: 0;
@@ -24,23 +20,10 @@ h1, h2, h3, h4, h5, p, span, a {
   }
 }
 
-.test {
-  height: 300px;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url("../assets/cover.jpg");
-
-  &::before {
-    top: 0;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(70, 70, 70, 0.32);
-  }
+.h-full {
+  height: 100%;
 }
 
-.top-80 {
-  top: 80px;
+.w-full {
+  width: 100%;
 }

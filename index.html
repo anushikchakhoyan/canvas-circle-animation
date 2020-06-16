@@ -4,135 +4,16 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon.ico">
-    <link rel="manifest" href="./public/manifest.json">
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link href="src/theme/_base.scss" type="text/css" rel="stylesheet"/>
 </head>
-<body class="m-0">
+<body>
 <main>
-    <header id="home" class="main-heading h-screen relative">
-        <canvas id="canvas-overlay" class="h-full w-full m-0 hidden md:block"></canvas>
-        <nav class="fixed z-20 top-0 w-full px-10 py-3 md:py-8 bg-white md:bg-transparent">
-            <div class="flex justify-end md:hidden">
-                <a id="toggle" href="javascript:void(0);" class="text-black md:text-white">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-            <div id="data-info" class="hidden justify-start items-start md:justify-end md:flex">
-                <ul class="flex flex-col md:flex-row">
-                    <li class="p-3"><a class="text-black hover:text-indigo-500 text-base" href="#home">Home</a></li>
-                    <li class="p-3"><a class="text-black hover:text-indigo-500 text-base" href="#about">About</a></li>
-                    <li class="p-3"><a class="text-black hover:text-indigo-500 text-base"
-                                       href="#portfolio">Portfolio</a></li>
-                    <li class="p-3"><a class="text-black hover:text-indigo-500 text-base" href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
-            <h1 class="text-white text-3xl md:text-6xl mb-0">Anush Chakhoyan</h1>
-            <p class="text-indigo-500 text-xl">Front-End Web Developer</p>
-            <ul class="pt-8 px-0 list-none flex justify-between items-end">
-                <li class="px-3">
-                    <a class="text-white hover:text-indigo-500 text-lg" href="https://www.facebook.com/chakhoyanAnush"
-                       target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="px-3">
-                    <a class="text-white hover:text-indigo-500 text-lg"
-                       href="https://www.linkedin.com/in/anush-chakhoyan/" target="_blank"
-                       rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li class="px-3">
-                    <a class="text-white hover:text-indigo-500 text-lg" href="https://www.instagram.com/anushchakhoyan/"
-                       target="_blank"
-                       rel="noreferrer"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="px-3">
-                    <a class="text-white hover:text-indigo-500 text-lg"
-                       href="https://www.pinterest.com/anush_chakhoyan/" target="_blank"
-                       rel="noreferrer"><i class="fab fa-pinterest-p"></i></a>
-                </li>
-            </ul>
-            <figure class="absolute bottom-0 w-full">
-                <img src="./src/assets/svg_corve.png" alt="svg-corve" class="w-full">
-            </figure>
-        </div>
+    <header id="home" class="main-heading">
+        <canvas id="canvas-overlay" class="h-full w-full"></canvas>
     </header>
-    <section id="about" class="bg-white w-full px-4 md:w-9/12 mx-auto h-auto lg:h-screen">
-        <div class="flex justify-center py-6">
-            <h1 class="text-black text-2xl mb-0">About Me
-                <div class="w-32 h-1 bg-indigo-500"></div>
-            </h1>
-        </div>
-        <div class="flex justify-start items-start flex-col lg:flex-row">
-            <div class="flex justify-center lg:justify-start lg:m-2 w-full lg:w-2/5">
-                <img src="https://images.unsplash.com/photo-1520874628750-bed9c0a19086?ixlib=rb-1.2.1&auto=format&fit=crop&w=740&q=80"
-                     class="w-full h-64 object-cover" alt="avatar">
-            </div>
-            <div class="lg:m-2 w-full lg:w-3/5">
-                <p class="p-3">
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </div>
-    </section>
-    <article class="test relative"></article>
-    <section id="portfolio" class="relative h-screen bg-blue-400">
-        <div class="absolute h-full w-full z-10 top-0 flex flex-col items-center justify-center">
-            <h1 class="text-white text-6xl mb-0">Portfolio</h1>
-        </div>
-    </section>
-    <section id="contacts" class="bg-white w-full px-4 md:w-9/12 mx-auto h-auto lg:h-screen">
-        <div class="flex justify-center py-6">
-            <h1 class="text-black text-2xl mb-0">Get in Touch
-                <div class="w-32 h-1 bg-indigo-500"></div>
-            </h1>
-        </div>
-        <div>
-            <h5>
-                If you wanna get in touch, talk to me about a project collaboration or just say hi,
-                send an email to anush.chakhoyan@develandoo.am
-                and ~let's talk.
-            </h5>
-            <ul class="py-8 px-3 list-none">
-                <li>
-                    hh
-                </li>
-                <li>
-                    hh
-                </li>
-                <li>
-                    hh
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="flex justify-center items-center py-3">
-            <p class="text-gray-500 text-sm">© 2020 All Rights Reserved </p>
-        </div>
-    </footer>
 </main>
 
 <script src="src/js/canvas.js"></script>
-<script src="src/js/custom.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
-
 </body>
 </html>

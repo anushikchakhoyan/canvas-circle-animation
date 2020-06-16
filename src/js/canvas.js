@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
     let canvas = document.getElementById('canvas-overlay');
     let ctx = canvas.getContext('2d');
